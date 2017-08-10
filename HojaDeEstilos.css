@@ -1,0 +1,31 @@
+#Style1 {
+    color:crimson; 
+    font-size:50px; 
+    font-family:Times New Roman;
+}
+
+.MyTextClass{
+    color:blue; 
+    font-size:40px; 
+    text-align:unset; 
+    font-family:cursive;
+}
+/*
+ASDFGH
+*/
+.MyLink{
+    background-color: #2ecc71;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    width: 30px;
+    text-align: center;
+}
+.MyLink:hover{
+    background-color:transparent;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #2ecc71;
+    width: 30px;
+    text-align: center;
+}
