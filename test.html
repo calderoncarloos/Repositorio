@@ -23,6 +23,18 @@
             position: relative;
             left: 25%;
         }
+        table, th,td {
+            border: 3px solid white;
+            border-collapse: collapse;
+            color:darkslateblue;
+            background-color:#95a5a6;
+            text-align:center;
+            font-family:Franklin Gothic Medium;
+            position: relative;
+        }
+        th, td {
+            padding: 25px;
+        }
         </style>
     </head>
             <!--=============================== 
@@ -55,7 +67,7 @@
         </div>
         <div class="col-xs-4"></div>
     </div>     
-        <img style="margin-bottom:20px; " src="Images/space1.gif" alt="EL ESPACIO EXTERIOR">
+    <img style="margin-bottom:20px; " src="Images/space1.gif" alt="EL ESPACIO EXTERIOR">
         <button class="btn btn-danger" onclick="miAlerta();"> Por favor no hagas clic!  </button>
             <!--*************************************************+
                          Thumbnail s/t dividido en tres
@@ -76,8 +88,53 @@
                         <img style="height:400px; border-top:100px; border-color:5px solid black;" src="Images/overw.jpg" alt="OVERWATCH">
                     </a>
                 </div>
-            </div>  
-            
+            </div> 
+            <!--****************************************
+                            Inserto Tabla
+            *****************************************-->
+            <table style="width:100%; ">
+                     <tr>
+                        <th>Juego</th>
+                        <th>Desarrollador</th>
+                        <th>Año de Lanzamiento</th>
+                        <th>Plataformas</th>
+                    </tr>
+                    <tr>
+                        <td>Fifa 18</td>
+                        <td>EA Sports</td>
+                        <td>2017</td>
+                        <td>Xbox, PlayStation, Nintendo y PC</td>
+                    </tr>
+                    <tr>
+                        <td>GTA V</td>
+                        <td>Rockstar Games</td>
+                        <td>2014</td>
+                        <td>Multiplataforma</td>
+                    </tr>
+                    <tr>
+                        <td>Overwatch</td>
+                        <td>Blizzard</td>
+                        <td>2016</td>
+                        <td>Multiplataforma</td>
+                    </tr>
+            </table>
+                <br>
+                <br>
+                <!--****************************************
+                        Inserto Cuadro de Informacion
+                *****************************************-->
+                <form style="color:black; background-color:coral; " action="/action_page.php">
+                     <fieldset>   
+                        <legend>Personal Information:</legend>
+                        First name:<br>
+                        <input type="text" name="firstname">
+                        <br>
+                        Last name:<br>
+                        <input type="text" name="lastname">
+                        <br>
+                        <br>
+                    </fieldset>   
+                </form>             
 
         <script>
             function miAlerta(){
